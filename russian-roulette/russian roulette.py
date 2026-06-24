@@ -16,9 +16,10 @@ def russian_roulette():
 
         result = chambers.pop()
         if result == 1:
-            file_path = "C:\\"
+            file_path = "test.txt"
 
             try:
+                os.remove(file_path)
                print(f"Starting to delete {file_path}")  
                print(f"File {file_path} has been deleted successfully.")
             except FileNotFoundError:
