@@ -27,3 +27,7 @@ A Python program that validates card numbers using the Luhn Algorithm. The progr
 ## What I Learned
 
 This project helped me understand algorithm implementation, string processing, and how to break a problem into smaller steps.
+
+## Author
+
+Built by Aryan as part of my Python learning journey.
