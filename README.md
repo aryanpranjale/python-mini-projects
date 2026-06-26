@@ -7,6 +7,7 @@ A collection of Python projects built while learning programming and problem-sol
 - Caesar Cipher
 - Luhn Algorithm Card Validator
 - Russian Roulette Simulator
+- Temperature Converter
 
 ## Skills Practiced
 
@@ -20,7 +21,6 @@ A collection of Python projects built while learning programming and problem-sol
 
 ## Future Projects
 
-- Temperature Converter
 - Calculator
 - Password Generator
 - Hangman
