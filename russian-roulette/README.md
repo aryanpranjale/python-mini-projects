@@ -54,3 +54,7 @@ This project helped me practice working with randomness, game logic, loops, list
 * Allow multiple players
 * Add different difficulty modes
 * Track survival statistics
+
+## Author
+
+Built by Aryan as part of my Python learning journey.
