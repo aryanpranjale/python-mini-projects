@@ -8,6 +8,7 @@ A collection of Python projects built while learning programming and problem-sol
 - Luhn Algorithm Card Validator
 - Russian Roulette Simulator
 - Temperature Converter
+- Tip Calculator
 
 ## Skills Practiced
 
