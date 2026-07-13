@@ -9,6 +9,7 @@ A collection of Python projects built while learning programming and problem-sol
 - Russian Roulette Simulator
 - Temperature Converter
 - Tip Calculator
+- Rock Paper Scissors
 
 ## Skills Practiced
 
