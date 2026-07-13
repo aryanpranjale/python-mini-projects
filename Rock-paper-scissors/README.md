@@ -46,3 +46,7 @@ python rock_paper_scissors.py
 This project taught me much more than just building a Rock Paper Scissors game. While developing it, I learned how to break a program into smaller functions, validate user input, keep track of data across multiple rounds, return values from functions, and think about writing cleaner, more organized code. I also started focusing on making the game more enjoyable by adding my own features instead of only following the tutorial.
 
 This is Version 1 of the project, and I plan to revisit it in the future as I learn more Python and improve its design.
+
+## Author
+
+Built by Aryan as part of my Python learning journey.
