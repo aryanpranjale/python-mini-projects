@@ -1,0 +1,152 @@
+import random
+
+def no_of_rounds():
+      
+      print("Enter the number of rounds to play!")
+      while True:
+            round_choice= input("Press enter for 3 rounds else put a number :")
+            user_round_choice = round_choice.strip()
+            
+            if user_round_choice== "" :
+                  rounds= 3
+                  return rounds
+                  
+            try:
+                  rounds = int(user_round_choice)
+                  if rounds > 0:
+                        return rounds
+                  elif rounds <0:
+                        print("You have entered a negative number  , try again!")
+                  else:
+                        talk_1= ["Surely you are scared to be defeated by me!",
+                                 "Try putting a actual number",
+                                 "Do you call THAT a number?", 
+                                 "Cant be bothered to win against a coward",
+                                 "I am being nice, try again kiddo!",
+                                 "So cute, stepping back even before playing!"]
+                        talk = random.choice(talk_1)
+                        print(talk)
+                  
+            except ValueError:
+                  print ("Please enter a valid number or press enter, and try again!")
+      
+
+
+
+def user_input():
+      print ("!! WARNING !! \nChoose Wisely!")
+      print ("ROCK is 0 \nPAPER is 1 \nSCISSORS is 2")      
+      while True:
+            try:
+
+                  user_move= int(input("Pick the number of your move : "))
+                  valid_input= [0,1,2]
+            
+                  if user_move in valid_input:
+                        return user_move
+                  else:
+                        talk_2= ["Trying to be cheecky?",
+                                 "You had one job.",
+                                 "How does it feel you fail successfully?",
+                                 "You just have to put 0, 1, 2!",
+                                 "Even 5-year-olds are better than you.",
+                                 "Disappointing!"]
+                        talk= random.choice(talk_2)
+                        print(talk)
+            except ValueError:
+                  print("Happens with everyone, try again!")
+def computer_input():
+      valid_input = [0,1,2]
+      comp_choice= random.choice(valid_input)
+      return comp_choice
+def face_off(user,computer):
+      ## draw= 0. win =1 , lose =2
+      
+      possible_picks = [
+    # Rock
+    """    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)""",
+
+    # Paper
+    """     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)""",
+
+    # Scissors
+    """    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)"""
+]
+      print("Player chose:")
+      print(possible_picks[user])
+
+      print("\nComputer chose:")
+      print(possible_picks[computer])
+      if user == computer:
+            return 0
+      elif user==0 and computer == 1:
+            return 2
+      elif user==0 and computer == 2:
+            return 1
+      elif user==1 and computer == 0:
+            return 1
+      elif user==1 and computer == 2:
+            return 2
+      elif user==2 and computer == 0:
+            return 2
+      elif user==2 and computer == 1:
+            return 1
+
+      
+
+      
+
+def score_counter(outcome, user_score,computer_score):
+      
+      if outcome == 0:
+            print(f'Score {user_score} - {computer_score}')
+      elif outcome==1:
+            user_score += 1
+            print(f'Score {user_score} - {computer_score}')
+            
+      elif outcome==2:
+            computer_score += 1
+            print(f'Score {user_score} - {computer_score}')
+      return user_score, computer_score
+      
+
+            
+
+            
+
+
+def play_game():
+      print("Welcome to The Game of ROCK PAPER SCISSORS")
+      print("!!Warning!!\nNot for weak hearted people!")
+      start_or_not = input('Enter Any key other than "1" to play:').strip()
+      if start_or_not == "1":
+            print("Saw it coming from a Mile!")
+      else:
+            setno= no_of_rounds()
+            user_score=0
+            computer_score=0
+            for i in range (0, setno):
+                  
+                  user= user_input()
+                  computer= computer_input()
+                  play= face_off(user,computer)
+                  score= score_counter(play,user_score,computer_score)
+                  (user_score, computer_score)= score
+            print(f' after {setno} rounds we have the scores {user_score}-{computer_score}')     
+
+play_game()
