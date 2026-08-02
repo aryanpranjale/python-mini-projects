@@ -4,14 +4,13 @@ A collection of Python projects built while learning programming and problem-sol
 
 ## Projects
 
-- Caesar Cipher
-- Luhn Algorithm Card Validator
-- Russian Roulette Simulator
-- Temperature Converter
-- Tip Calculator
-- Rock Paper Scissors
-- Hangman
-
+- [Caesar Cipher](./Caesar-Cipher)
+- [Luhn Algorithm Card Validator](./Luhn-Algorithm)
+- [Russian Roulette Simulator](./Russian-Roulette)
+- [Temperature Converter](./Temperature-Converter)
+- [Tip Calculator](./Tip-Calculator)
+- [Rock Paper Scissors](./Rock-Paper-Scissors)
+- [Hangman](./Hangman)
 ## Skills Practiced
 
 - Python Fundamentals
