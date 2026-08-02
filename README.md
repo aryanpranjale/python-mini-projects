@@ -10,6 +10,7 @@ A collection of Python projects built while learning programming and problem-sol
 - Temperature Converter
 - Tip Calculator
 - Rock Paper Scissors
+- Hangman
 
 ## Skills Practiced
 
@@ -25,5 +26,4 @@ A collection of Python projects built while learning programming and problem-sol
 
 - Calculator
 - Password Generator
-- Hangman
 - File Organizer
