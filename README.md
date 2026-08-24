@@ -34,7 +34,6 @@ A collection of Python projects built while learning programming and problem-sol
 ## Future Projects
 
 - Calculator
-- Password Generator
 - File Organizer
 - To-Do List (CLI)
 - Quiz Game
