@@ -99,5 +99,4 @@ python password_generator.py
 ```
 
 ## Author
-Aryan Pranjale
-Built as a Python learning project.
+ Built by Aryan as part of my Python learning journey.
