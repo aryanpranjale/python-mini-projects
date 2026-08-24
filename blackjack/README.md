@@ -62,33 +62,33 @@ Your score was: 14
 Dealers' score was : 17
 Dealer wins!
 
-##Future Improvements
- -Use a proper 52-card deck
- -Prevent the same physical card from being drawn more than once
- -Add suits: Hearts, Diamonds, Clubs, and Spades
- -Add ASCII card artwork
- -Add proper Blackjack detection
- -Improve the user interface
- -Add score/betting system
+## Future Improvements
+ - Use a proper 52-card deck
+ - Prevent the same physical card from being drawn more than once
+ - Add suits: Hearts, Diamonds, Clubs, and Spades
+ - Add ASCII card artwork
+ - Add proper Blackjack detection
+ - Improve the user interface
+ - Add score/betting system
 
- What I Practiced
+ ## What I Practiced
 
 This project helped me practice:
 
-##Functions
--while and for loops
--Lists
--List comprehensions
--if / elif / else
--try / except
--User input
--random.choice()
--Mutable lists
--Program state
--Breaking a problem into smaller functions
--Translating real-world rules into program logic
+- Functions
+- while and for loops
+- Lists
+- List comprehensions
+- if / elif / else
+- try / except
+- User input
+- random.choice()
+- Mutable lists
+- Program state
+- Breaking a problem into smaller functions
+- Translating real-world rules into program logic
 
-##Author
+## Author
 
 Aryan
 
