@@ -11,7 +11,7 @@ A collection of Python projects built while learning programming and problem-sol
 - [Tip Calculator](./Tip-Calculator)
 - [Rock Paper Scissors](./Rock-Paper-Scissors)
 - [Hangman](./Hangman)
-
+- [BlackJack](./blackjack)
 ---
 
 ## Skills Practiced
@@ -42,7 +42,7 @@ A collection of Python projects built while learning programming and problem-sol
 - Number Guessing Game
 - Library Management System
 - Tic-Tac-Toe
-- 
+ 
 ---
 
 ## Goals
