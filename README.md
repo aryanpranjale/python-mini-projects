@@ -12,6 +12,7 @@ A collection of Python projects built while learning programming and problem-sol
 - [Rock Paper Scissors](./Rock-Paper-Scissors)
 - [Hangman](./Hangman)
 - [BlackJack](./blackjack)
+- [Password Generator](./Password-generator)
 ---
 
 ## Skills Practiced
