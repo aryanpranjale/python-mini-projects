@@ -13,6 +13,7 @@ A collection of Python projects built while learning programming and problem-sol
 - [Hangman](./Hangman)
 - [BlackJack](./blackjack)
 - [Password Generator](./Password-generator)
+- [Number Guessing Game](./Number-Guessing-Game)
 ---
 
 ## Skills Practiced
@@ -39,7 +40,6 @@ A collection of Python projects built while learning programming and problem-sol
 - Quiz Game
 - Contact Book
 - Expense Tracker
-- Number Guessing Game
 - Library Management System
 - Tic-Tac-Toe
  
