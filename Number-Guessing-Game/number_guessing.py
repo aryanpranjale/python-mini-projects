@@ -53,7 +53,7 @@ def play_game():
                         print(f"The number is higher then {player_guess}")
                         guessed_numbers.append(player_guess)
                         print(f"{player_guess}<")
-                    elif player_guess > int(ran_num):
+                    elif player_guess > ran_num:
                         print(f"The number is lower than {player_guess}")
                         guessed_numbers.append(player_guess)
                         print(f"{player_guess}>")
