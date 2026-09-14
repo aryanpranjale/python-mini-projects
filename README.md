@@ -14,7 +14,7 @@ A collection of Python projects built while learning programming and problem-sol
 - [BlackJack](./blackjack)
 - [Password Generator](./Password-generator)
 - [Number Guessing Game](./Number-Guessing-Game)
-- [Higher Or Lower](./Higher-or-lower)
+- [Higher Or Lower](./Higher-Or-Lower)
 ---
 
 ## Skills Practiced
