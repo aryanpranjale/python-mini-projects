@@ -1,0 +1,158 @@
+import csv
+import random
+from pathlib import Path
+print(''' _   _    _    _   _  ____ __  __    _    _   _
+| | | |  / \  | \ | |/ ___|  \/  |  / \  | \ | |
+| |_| | / _ \ |  \| | |  _| |\/| | / _ \ |  \| |
+|  _  |/ ___ \| |\  | |_| | |  | |/ ___ \| |\  |
+|_| |_/_/   \_\_| \_|\____|_|  |_/_/   \_\_| \_|''')
+hangman_stages = [
+    """
+      +---+
+      |   |
+          |
+          |
+          |
+          |
+    =========
+    """,
+    """
+      +---+
+      |   |
+      O   |
+          |
+          |
+          |
+    =========
+    """,
+    """
+      +---+
+      |   |
+      O   |
+      |   |
+          |
+          |
+    =========
+    """,
+    """
+      +---+
+      |   |
+      O   |
+     /|   |
+          |
+          |
+    =========
+    """,
+    """
+      +---+
+      |   |
+      O   |
+     /|\  |
+          |
+          |
+    =========
+    """,
+    """
+      +---+
+      |   |
+      O   |
+     /|\  |
+     /    |
+          |
+    =========
+    """,
+    """
+      +---+
+      |   |
+      O   |
+     /|\  |
+     / \  |
+          |
+    =========
+    """
+]
+def random_word_picker():
+      # picks a random word from a csv file
+      file_path = Path(__file__).parent / "words.csv"
+
+      with open(file_path,"r") as file:
+            filepath= csv.DictReader(file)
+            wordlist= []
+            dif_level=["easy","medium","hard"]
+            valid_userselection = [1,2,3]
+            print('''1. Easy
+2. Medium
+3. Hard''')
+            while True:
+                  # asks the user for the difficulty level and returns a list of words
+                  try:
+                        
+                        mode= int(input("Select the Difficulty: \n"))
+                        if mode in valid_userselection:
+                              selectmode = dif_level[mode - 1]
+                              for row in filepath:
+                                    if row["difficulty"] == selectmode:
+                                          wordlist.append(row["word"])
+                              break
+                        else:
+                              print('''Please choose:
+1 - Easy
+2 - Medium
+3 - Hard''')
+                  except ValueError:
+                        print("Enter a 1,2 or 3 for difficulty level you want to play")
+      # after picking up the list, function returns only one word to the code           
+      word = random.choice(wordlist)
+      return word
+
+def create_hidden_word(word):
+      # converts the random word into hidden word
+      hidden_word = []
+      for _ in range (len(word)):
+            hidden_word.append("_")
+      return hidden_word
+def userguess_verifier():
+      # validates the user guess
+      while True:
+            userinp= input("Guess the alphabet: \n").strip().lower()
+            if userinp.isalpha() and len(userinp) == 1 :
+                  return userinp
+            else:
+                  print("Try guessing a letter!")
+                             
+
+def play_game(word,hid_list):
+      lives= 6
+      print (hangman_stages[0])
+      print(" ".join(hid_list))
+      guessed_letters=[]
+      while "_" in hid_list and lives > 0:
+            user_guess= userguess_verifier()
+
+            if user_guess not in guessed_letters:
+                  if user_guess in word:
+                        for i in range (len(hid_list)):
+                              if word[i] == user_guess:
+                                    hid_list[i] = user_guess
+                  else:
+                        lives -= 1
+                        
+                  guessed_letters.append(user_guess)
+            else:
+                  print("You have guessed this letter before try again with other letter!")
+            print(hangman_stages[6-lives])
+            print(f"Lives remaining: {lives}")
+            print(" ". join(hid_list))
+            print("Guessed letters:\n" , ",".join(guessed_letters) )
+      if "_" not in hid_list:
+            print("Congratulations! you have successfully Guessed the word")
+      elif lives == 0:
+            print("Good try! You lost all your lives.")
+            print(f"The word was: {word}")
+            
+
+
+            
+word= random_word_picker()
+hid_list=create_hidden_word(word)
+play_game(word,hid_list)
