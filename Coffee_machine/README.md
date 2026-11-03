@@ -34,7 +34,7 @@ A command-line Coffee Machine simulation written in Python. The program allows u
 
 python main.py
 
-## Game Logic
+## Logic
 
 The machine displays available coffee choices and waits for the user to select a drink.
 
