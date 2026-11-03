@@ -15,20 +15,28 @@ A collection of Python projects built while learning programming and problem-sol
 - [Password Generator](./Password-generator)
 - [Number Guessing Game](./Number-Guessing-Game)
 - [Higher Or Lower](./Higher-Or-Lower)
+- [Coffee Machine](./Coffee_machine)
 ---
 
 ## Skills Practiced
 
+## Concepts Practiced
+
 - Python Fundamentals
-- Functions
-- Loops
+- Variables and Data Types
+- Functions and Modular Programming
+- Loops (`for` / `while`)
 - Conditional Statements
+- Lists, Tuples and Dictionaries
+- List and Dictionary Methods
+- String Manipulation
+- User Input and Input Validation
+- Exception Handling (`try` / `except`)
 - File Handling
 - CSV Handling
-- String Manipulation
-- Input Validation
-- Exception Handling (`try` / `except`)
-- Algorithms
+- Random Module
+- Generator Expressions
+- Basic Algorithms and Problem Solving
 - Git & GitHub
 
 ----
