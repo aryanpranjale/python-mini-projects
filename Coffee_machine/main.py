@@ -7,16 +7,6 @@
 # nickel = $0.05
 # penny = $0.01
 import data
-def money_total():
-    money_data = data.money
-    quarter_t= (money_data["quarter"]*0.25) 
-    dime_t= money_data["dime"]* 0.10
-    nickel_t = money_data["nickel"]*0.05
-    penny_t = money_data["penny"]*0.01
-
-    total_money = quarter_t + dime_t +nickel_t+ penny_t
-    total_money= round(total_money,2)
-    return total_money
 def take_money(cost_of_coffee):
     
     paid_money = 0
@@ -108,6 +98,7 @@ def coffee_machine():
                 
                 report_update["total_money"] += askmoney
                 report_update[selected_coffee["name"][0]] += 1
+                print("Enjoy your coffee!!")
             
     
 coffee_machine()
