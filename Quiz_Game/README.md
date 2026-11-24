@@ -52,6 +52,19 @@ You got it right!
 You answered 14/20 correctly
 ```
 
-## Purpose
+## Future Improvements
 
-This project was built as a hands-on exercise to understand Object-Oriented Programming in Python and learn how to organise code into multiple modules.
+- Add randomised questions.
+- Introduce difficulty levels.
+- Add a timer for answering questions.
+- Save high scores using file handling.
+- Allow users to replay the quiz.
+- Improve the command-line interface.
+
+## What I Learned
+
+This project helped me understand Object-Oriented Programming, creating classes and objects, using constructors and instance attributes, working with lists of objects, creating methods, implementing loops and conditional statements, validating user input, and organising code into multiple Python modules.
+
+## Author
+
+Built by Aryan as part of my Python learning journey.
