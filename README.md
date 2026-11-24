@@ -16,6 +16,7 @@ A collection of Python projects built while learning programming and problem-sol
 - [Number Guessing Game](./Number-Guessing-Game)
 - [Higher Or Lower](./Higher-Or-Lower)
 - [Coffee Machine](./Coffee_machine)
+- [Quiz Game](./Quiz_Game)
 ---
 
 ## Skills Practiced
@@ -37,6 +38,7 @@ A collection of Python projects built while learning programming and problem-sol
 - Random Module
 - Generator Expressions
 - Basic Algorithms and Problem Solving
+- OOPS
 - Git & GitHub
 
 ----
@@ -46,7 +48,6 @@ A collection of Python projects built while learning programming and problem-sol
 - Calculator
 - File Organizer
 - To-Do List (CLI)
-- Quiz Game
 - Contact Book
 - Expense Tracker
 - Library Management System
